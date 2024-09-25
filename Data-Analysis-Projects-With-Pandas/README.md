@@ -26,5 +26,3 @@ I’m learning Python because of its simplicity, versatility, and wide use in da
 
 ## Contact
 
-You can copy and paste this directly into your `README.md` file. The formatting will stay intact!
-
