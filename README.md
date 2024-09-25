@@ -12,3 +12,7 @@ Welcome to my project portfolio! In this repository, I document my journey of le
 
 ## Why This Portfolio?
 I believe in continuous learning and tackling real-world problems. This repository serves as a space where I can track my progress, share my work, and showcase my skills in problem-solving through well-thought-out solutions.
+
+## Contact
+- **Email**: sebastianhernandezjimenez019@gmail.com
+- **Phone**: +506 7051 4135
