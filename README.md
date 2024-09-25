@@ -4,6 +4,7 @@ Welcome to my project portfolio! In this repository, I document my journey of le
 
 ## Projects Included:
 - **[Data-Analysis-Projects-With-Pandas]**: In this Project, I document my journey of learning and self-improvement through projects that focus on solving problems with effective solutions.
+- **[Gym-Management-With-MySQL-and-PHP]**: In this project, I developed a complete website for a gym, utilizing MySQL, PHP, jQuery, HTML, CSS, and JavaScript. 
 
 ## Technologies Used:
 - Python
