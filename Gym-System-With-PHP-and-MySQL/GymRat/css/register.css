@@ -1,0 +1,36 @@
+.prin_register{
+    padding-top: 10%;
+    padding-right: 15%;
+    padding-left: 15%;
+
+}
+
+.cont_register{
+    padding-top: 5%;
+    padding: 5%;
+    background-color:whitesmoke;
+    border-radius: 10px;
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: auto auto; /* Dos filas de altura automática */
+    gap:2px; /* Espacio entre filas */
+}
+
+.cont_foto {
+    display: flex;
+    justify-content:start;
+
+}
+
+.foto {
+    border: solid 2px black;
+    border-radius: 100px;
+
+}
+
+.foto img {
+    max-width: 80px; /* Establece un ancho máximo para la imagen (por ejemplo, 100px) */
+    height: auto; /* Esto asegura que la altura se ajuste automáticamente para mantener la proporción */
+}

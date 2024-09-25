@@ -1,0 +1,30 @@
+body{
+    margin: 0px;
+
+}
+.title{
+    margin-top: 100px;
+    padding-left: 30px;
+}
+.cont{
+    display: flex;
+    justify-content: center;
+}
+.cont_exercises{
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 40%);
+    gap: 10px;
+}
+.btn.btn-primary {
+    border-color: aliceblue;
+    background-color: rgb(103, 247, 103);
+}
+
+.btn_exercises{
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3,25%);
+    gap: 20px;
+}
+

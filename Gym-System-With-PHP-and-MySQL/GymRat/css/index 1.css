@@ -1,0 +1,32 @@
+
+h1{
+    color:aliceblue;
+}
+
+.a {
+    text-align: center; /* Centrar horizontalmente el contenido */
+}
+body{
+    background-color: rgba(7, 123, 255, 0.637);
+    
+    margin: 0px;
+}
+.cont{
+    color: black;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    padding-top: 5%;
+
+
+}
+.prin{
+    padding-top: 10%;
+    padding-right: 25%;
+    padding-left: 25%;
+
+}
+
+
+

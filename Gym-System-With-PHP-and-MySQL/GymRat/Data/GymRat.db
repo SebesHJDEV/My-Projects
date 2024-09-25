@@ -1,0 +1,55 @@
+CREATE DATABASE Gymrats;
+USE Gymrats;
+
+CREATE TABLE Users (
+    id_user INT PRIMARY KEY AUTO_INCREMENT,
+    nickname VARCHAR(50),
+    email VARCHAR(50),
+    password VARCHAR(100),
+    name VARCHAR(50) NOT NULL,
+    img VARCHAR(255),
+    surnames VARCHAR(100),
+    registration_date DATETIME,
+    account_role VARCHAR(100)
+);
+
+CREATE TABLE Exercises (
+    id_exercise INT PRIMARY KEY AUTO_INCREMENT,
+    exercise_name VARCHAR(50),
+    description TEXT,
+    created_by INT,
+    FOREIGN KEY (created_by) REFERENCES Users(id_user)
+);
+ALTER TABLE Exercises ADD COLUMN image_url VARCHAR(200);
+
+CREATE TABLE ExerciseWeights (
+    id_weight INT PRIMARY KEY AUTO_INCREMENT,
+    id_user INT,
+    id_exercise INT,
+    weight DECIMAL(5,2),
+    date_recorded DATETIME,
+    FOREIGN KEY (id_user) REFERENCES Users(id_user),
+    FOREIGN KEY (id_exercise) REFERENCES Exercises(id_exercise)
+);
+
+ALTER TABLE ExerciseWeights
+MODIFY date_recorded VARCHAR(50);
+
+CREATE TABLE PersonalInfo (
+    id_info INT PRIMARY KEY AUTO_INCREMENT,
+    id_user INT,
+    person_weight DECIMAL(5,2),
+    Person_height DECIMAL(5,2),
+    registration_date DATETIME,
+    FOREIGN KEY (id_user) REFERENCES Users(id_user)
+);
+
+CREATE TABLE RegisterWeight (
+    id_weight INT PRIMARY KEY AUTO_INCREMENT,
+    id_user INT,
+    id_info INT,
+    weight DECIMAL(5,2),
+    date_recorded DATETIME,
+    FOREIGN KEY (id_user) REFERENCES Users(id_user),
+    FOREIGN KEY (id_info) REFERENCES PersonalInfo(id_info)
+);
